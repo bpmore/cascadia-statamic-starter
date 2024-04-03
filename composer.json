@@ -1,0 +1,9 @@
+{
+    "name": "my-vendor-name/starter-kit-tailwind-alpine",
+    "extra": {
+        "statamic": {
+            "name": "Starter Kit Tailwind Alpine",
+            "description": "Starter Kit Tailwind Alpine starter kit"
+        }
+    }
+}

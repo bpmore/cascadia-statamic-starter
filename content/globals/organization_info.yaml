@@ -1,0 +1,15 @@
+title: 'Organization Info'
+data:
+  address: |-
+    123 Main St.
+    Vancouver, BC
+    V2S 0B9
+  phone_number: '7788377487'
+  email: michael@cascadia.digital
+  social_links:
+    -
+      id: lt9b5u0l
+      social_platform: linkedin
+      link: 'https://linkedin.com/in/mikelaroy'
+      type: social_link
+      enabled: true

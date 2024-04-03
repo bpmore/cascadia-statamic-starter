@@ -1,0 +1,26 @@
+tree:
+  -
+    id: b479db84-687f-4931-8d7f-1fe42be59dd6
+    title: About
+    url: /about
+    children:
+      -
+        id: 926f9b82-e543-4c66-b340-79f94e05b9ff
+        title: Mike
+        url: 'https://mikelaroy.ca'
+      -
+        id: cb5d2f05-e019-472c-839a-2d8df5bc0d0b
+        title: About
+        url: about
+  -
+    id: 7b9ddfe9-b876-4219-b520-bc4577d14238
+    title: Blog
+    url: /blog
+  -
+    id: e4630760-e5c0-4b55-b19e-83ca01992362
+    title: Contact
+    url: /contact
+  -
+    id: d5c63fdc-8549-4560-b8f8-56204ac4cb81
+    title: 'Private Page'
+    url: /private-page

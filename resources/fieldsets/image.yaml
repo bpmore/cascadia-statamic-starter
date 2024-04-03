@@ -1,0 +1,21 @@
+title: Image
+fields:
+  -
+    handle: image
+    field: common.image
+    config:
+      container: assets
+      width: 50
+  -
+    handle: size
+    field: common.size
+    config:
+      width: 50
+  -
+    handle: caption
+    field:
+      input_type: text
+      type: text
+      localizable: true
+      listable: hidden
+      display: Caption

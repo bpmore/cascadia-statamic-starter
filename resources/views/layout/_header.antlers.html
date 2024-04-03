@@ -1,0 +1,27 @@
+{{ if site_config:show_secondary_nav && site_config:secondary_nav_location == 'top' }}
+    <div class="py-2 bg-slate-200">
+        <div class="container">
+            <ul class="flex justify-end gap-2 text-xs items-center">
+                {{ partial:nav.secondary}}
+            </ul>
+        </div>
+    </div>
+{{ /if }}
+{{ if site_config:show_secondary_nav && site_config:secondary_nav_location == 'off_canvas' }}
+    {{ partial:nav.off_canvas }}
+{{ /if }}
+<header class="py-4 lg:py-8">
+    <div class="container">
+        <div class="flex justify-between">
+            <div>
+                <h1>
+                    <a href="/" class="font-semibold text-lg">
+                        {{ site:name }}
+                    </a>
+                </h1>
+            </div>
+            <div>
+                {{ partial:nav.main }}
+        </div>
+    </div>
+</header>
