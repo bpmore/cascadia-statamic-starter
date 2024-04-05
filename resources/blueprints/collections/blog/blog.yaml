@@ -13,44 +13,7 @@ tabs:
               validate:
                 - required
           -
-            handle: content
-            field:
-              buttons:
-                - h2
-                - h3
-                - bold
-                - italic
-                - unorderedlist
-                - orderedlist
-                - removeformat
-                - quote
-                - anchor
-                - image
-              smart_typography: false
-              save_html: false
-              inline: false
-              toolbar_mode: fixed
-              reading_time: false
-              word_count: false
-              fullscreen: true
-              allow_source: true
-              enable_input_rules: true
-              enable_paste_rules: true
-              remove_empty_nodes: false
-              antlers: false
-              link_noopener: false
-              link_noreferrer: false
-              target_blank: false
-              always_show_set_button: false
-              collapse: false
-              previews: true
-              type: bard
-              display: Content
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
+            import: blog_content_with_sets
   sidebar:
     display: Sidebar
     sections:
@@ -67,9 +30,15 @@ tabs:
             field:
               type: terms
               taxonomies:
-                - category
+                - categories
               display: Category
               mode: select
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              replicator_preview: true
+              create: true
+              hide_display: false
           -
             handle: date
             field:
@@ -121,3 +90,11 @@ tabs:
         fields:
           -
             import: seo_fields
+          -
+            handle: categories
+            field:
+              type: terms
+              taxonomies:
+                - categories
+              display: Categories
+              mode: select

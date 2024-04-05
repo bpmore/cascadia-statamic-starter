@@ -3,7 +3,7 @@ template: blog/show
 layout: layout
 mount: d1479d85-248b-4b20-a9da-83e6fdff1f6a
 taxonomies:
-  - category
+  - categories
 revisions: false
 route: '/{mount}/{slug}'
 date: true

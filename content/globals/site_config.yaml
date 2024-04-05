@@ -1,4 +1,4 @@
 title: 'Site Config'
 data:
   show_secondary_nav: true
-  secondary_nav_location: top
+  secondary_nav_location: off_canvas

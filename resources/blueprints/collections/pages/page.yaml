@@ -62,12 +62,30 @@ tabs:
         display: Security
         fields:
           -
-            handle: password_protected
+            handle: protect
             field:
               default: false
-              type: toggle
-              display: 'Password Protected'
-              instructions: 'Enable to protect this page with a password'
+              type: protect_with_password
+              display: 'Protect With Password'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+      -
+        display: 'Nav Style'
+        fields:
+          -
+            handle: main_header_style
+            field:
+              options:
+                default: Default
+                transparent: Transparent
+              inline: false
+              cast_booleans: false
+              default: default
+              type: radio
+              display: 'Main Header Style'
               listable: hidden
               instructions_position: above
               visibility: visible

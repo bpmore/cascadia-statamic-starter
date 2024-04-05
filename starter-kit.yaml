@@ -1,5 +1,4 @@
 export_paths:
-  - addons
   - content
   - config/filesystems.php
   - config/statamic/assets.php

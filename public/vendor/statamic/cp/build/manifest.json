@@ -1,6 +1,6 @@
 {
   "resources/css/tailwind.css": {
-    "file": "assets/tailwind-9bbaf771.css",
+    "file": "assets/tailwind-183958aa.css",
     "isEntry": true,
     "src": "resources/css/tailwind.css"
   },
@@ -25,12 +25,12 @@
     "src": "resources/img/favicon.ico"
   },
   "resources/js/app.css": {
-    "file": "assets/app-9abf013e.css",
+    "file": "assets/app-e0fc4bb9.css",
     "src": "resources/js/app.css"
   },
   "resources/js/app.js": {
     "css": [
-      "assets/app-9abf013e.css"
+      "assets/app-e0fc4bb9.css"
     ],
     "dynamicImports": [
       "resources/svg/icons/light/add-circle.svg",
@@ -839,7 +839,7 @@
       "resources/svg/filetypes/video.svg",
       "resources/svg/filetypes/xml.svg"
     ],
-    "file": "assets/app-da9d0f84.js",
+    "file": "assets/app-cbbf9d17.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },

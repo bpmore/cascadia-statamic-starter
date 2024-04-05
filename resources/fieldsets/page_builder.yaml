@@ -102,6 +102,34 @@ fields:
                     replicator_preview: true
                     hide_display: false
                 -
+                  handle: background_option
+                  field:
+                    options:
+                      image: Image
+                      video: Video
+                    inline: false
+                    cast_booleans: false
+                    default: image
+                    type: radio
+                    display: 'Background Media'
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: false
+                -
+                  handle: background_video
+                  field:
+                    type: video
+                    display: 'Background Video'
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: false
+                    if:
+                      background_option: 'equals video'
+                -
                   handle: background_image
                   field:
                     mode: list
@@ -117,6 +145,8 @@ fields:
                     visibility: visible
                     replicator_preview: true
                     hide_display: false
+                    if:
+                      background_option: 'equals image'
                 -
                   handle: cta_link
                   field:

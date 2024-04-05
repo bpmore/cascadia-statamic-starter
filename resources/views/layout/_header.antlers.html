@@ -10,7 +10,9 @@
 {{ if site_config:show_secondary_nav && site_config:secondary_nav_location == 'off_canvas' }}
     {{ partial:nav.off_canvas }}
 {{ /if }}
-<header class="py-4 lg:py-8">
+
+{{ $styles = main_header_style == 'transparent' ? 'py-8 lg:pt-8 lg:pb-16 absolute top-0 left-0 w-full z-10 text-white bg-gradient-to-b from-black/60 to-transparent' : 'py-4 lg:py-8' }}
+<header class="{{ $styles }}">
     <div class="container">
         <div class="flex justify-between">
             <div>
@@ -22,6 +24,7 @@
             </div>
             <div>
                 {{ partial:nav.main }}
+            </div>
         </div>
     </div>
 </header>
