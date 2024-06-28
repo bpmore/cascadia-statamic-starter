@@ -9,7 +9,7 @@
     </ul>
 
 
-    {{ blog as="posts" paginate="12" sort="date:desc" }}
+    {{ collection:blog as="posts" paginate="12" sort="date:desc" }}
         <ul class="list-none text-lg lg:text-xl mt-8 grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-8">
             {{ posts }}
                 <li>
@@ -33,5 +33,5 @@
                 </div>
             {{ /if }}
         {{ /paginate }}
-    {{ /blog }}
+    {{ /collection }}
 </div>
