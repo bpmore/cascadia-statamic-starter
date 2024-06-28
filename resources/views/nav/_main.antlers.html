@@ -7,7 +7,7 @@
     </button>
     <div class="nav-container-desktop">
         {{# Desktop Nav #}}
-        <ul class="gap-4 items-center justify-end hidden lg:flex">
+        <ul class="gap-6 items-center justify-end hidden lg:flex">
             {{ nav:main_nav }}
                 <li x-data x-popover class="relative">
                     {{ if children }}
@@ -50,6 +50,7 @@
         </ul>
     </div>
 
+    {{# Mobile Nav #}}
     <div class="nav-container-mobile lg:hidden w-screen h-screen fixed top-0 left-0 z-50 bg-white text-slate-800" x-show="isMenuOpen" x-transition x-trap="isMenuOpen">
         <div class="container relative pt-8">
             <button type="button" @click="toggleMenu" class="flex gap-2 items-center ml-auto">
@@ -58,7 +59,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                 </svg>
             </button>
-            {{# Mobile Nav #}}
+
             <ul class="justify-start flex flex-col mt-8">
                 {{ nav:main_nav }}
                     <li x-data="{ isItemOpen: false }" class="menu-item relative py-2">

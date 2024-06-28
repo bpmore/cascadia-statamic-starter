@@ -223,6 +223,13 @@ fields:
               fields:
                 -
                   import: fifty_split
+            cta_bumper:
+              display: 'CTA Bumper'
+              instructions: null
+              icon: text-formatting-image-top
+              fields:
+                -
+                  import: cta_bumper
       instructions_position: above
       visibility: visible
       previews: true

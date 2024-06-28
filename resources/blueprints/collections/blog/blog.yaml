@@ -18,6 +18,11 @@ tabs:
     display: Sidebar
     sections:
       -
+        display: SEO
+        fields:
+          -
+            import: seo_fields
+      -
         fields:
           -
             handle: slug
@@ -86,10 +91,8 @@ tabs:
               replicator_preview: true
               hide_display: false
       -
-        display: SEO
+        display: Categories
         fields:
-          -
-            import: seo_fields
           -
             handle: categories
             field:

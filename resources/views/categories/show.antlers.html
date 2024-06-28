@@ -8,13 +8,13 @@
         {{ /taxonomy:categories }}
     </ul>
 
-    {{ collection:blog as="posts" taxonomy:categories="{{ slug }}" }}
-        {{ posts }}
-            <ul class="list-none text-lg lg:text-xl mt-8 grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-8">
+    {{ blog:taxonomy as="posts" category="{{ slug }}" }}
+        <ul class="list-none text-lg lg:text-xl mt-8 grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-8">
+            {{ posts }}
                 <li>
                     {{ partial:blog.teaser }}
                 </li>
-            </ul>
-        {{ /posts }}
-    {{ /collection:blog }}
+            {{ /posts }}
+        </ul>
+    {{ /blog:taxonomy }}
 </div>

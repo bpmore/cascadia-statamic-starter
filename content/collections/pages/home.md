@@ -5,7 +5,7 @@ title: Home
 template: home
 author: b3154f8e-5ed4-4804-a31c-5b768efc6e8e
 updated_by: b3154f8e-5ed4-4804-a31c-5b768efc6e8e
-updated_at: 1712183266
+updated_at: 1714152082
 page_builder:
   -
     id: ltgcaf0k
@@ -119,6 +119,14 @@ page_builder:
         enabled: true
     type: accordion
     enabled: true
+  -
+    id: lvgwz0kp
+    cta_heading: 'This is the CTA Heading.'
+    short_description: 'This is the sort description text to complement the heading above.'
+    type: cta_bumper
+    enabled: true
+    cta_link: 96920a7d-9b68-47c6-ad50-fe8906b8c6ab
+    cta_text: 'Get started'
 password_protected: false
 main_header_style: transparent
 ---

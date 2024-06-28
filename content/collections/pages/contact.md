@@ -3,7 +3,7 @@ id: 726ad294-cf9c-40fd-b204-277118b5aed5
 blueprint: page
 title: Contact
 updated_by: b3154f8e-5ed4-4804-a31c-5b768efc6e8e
-updated_at: 1711129070
+updated_at: 1714151658
 page_builder:
   -
     id: ltf2swiw
@@ -47,4 +47,14 @@ page_builder:
         location_type: industrial
     type: google_map
     enabled: true
+  -
+    id: lvgxmmq5
+    cta_heading: 'Work with Us'
+    cta_link:
+      - 96920a7d-9b68-47c6-ad50-fe8906b8c6ab
+    cta_text: 'Get started'
+    type: cta_bumper
+    enabled: true
+parent: home
+main_header_style: default
 ---
