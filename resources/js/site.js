@@ -2,11 +2,13 @@
 import Alpine from 'alpinejs';
 import collapse from '@alpinejs/collapse'
 import focus from '@alpinejs/focus'
+import Precognition from 'laravel-precognition-alpine'
 
 window.Alpine = Alpine;
 
 Alpine.plugin(collapse);
 Alpine.plugin(focus)
+Alpine.plugin(Precognition);
 
 import App from './alpine/app';
 import GoogleMap from './alpine/google-map';

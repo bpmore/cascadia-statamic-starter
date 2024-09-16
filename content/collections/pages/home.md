@@ -5,12 +5,12 @@ title: Home
 template: home
 author: b3154f8e-5ed4-4804-a31c-5b768efc6e8e
 updated_by: b3154f8e-5ed4-4804-a31c-5b768efc6e8e
-updated_at: 1714152082
+updated_at: 1726526312
 page_builder:
   -
     id: ltgcaf0k
-    main_heading: 'Get a head start on your project'
-    sub_heading: 'Some subheading goes here to be a bit more descriptive'
+    main_heading: 'Cascadia Starter'
+    sub_heading: 'A Starter Kit for Statamic, featuring TailwindCSS and AlpineJS'
     type: hero
     enabled: true
     cta_link: 96920a7d-9b68-47c6-ad50-fe8906b8c6ab

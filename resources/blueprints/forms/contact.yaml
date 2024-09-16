@@ -7,24 +7,17 @@ tabs:
           -
             handle: name
             field:
-              input_type: text
-              antlers: false
               type: text
-              display: 'Text Field'
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
+              display: Name
           -
             handle: email
             field:
               input_type: email
-              antlers: false
               type: text
-              display: 'Text Field'
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
+              display: Email
+              placeholder: your@email.com
+          -
+            handle: content
+            field:
+              type: textarea
+              display: Content

@@ -3,8 +3,14 @@
 
     <ul class="inline-flex gap-2 mt-4">
         <li><a href="/blog" class="rounded bg-blue-200 px-2 py-1 text-xs hover:bg-blue-300 transition">All</a></li>
-        {{ taxonomy:categories slug:not="{{ slug }}" }}
-            <li><a href="{{ url }}"  class="rounded bg-blue-200 px-2 py-1 text-xs hover:bg-blue-300 transition">{{ title }}</a></li>
+        {{ taxonomy:categories scope="tax" }}
+            <li>
+                <a
+                    href="{{ tax:url }}"
+                    class="rounded px-2 py-1 text-xs hover:bg-blue-300 transition {{ if tax:slug == page:slug }}bg-blue-400 current{{ else }} bg-blue-200{{ /if }}">
+                    {{ tax:title }}
+                </a>
+            </li>
         {{ /taxonomy:categories }}
     </ul>
 

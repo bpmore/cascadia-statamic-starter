@@ -6,7 +6,7 @@ tree:
     children:
       -
         id: cb5d2f05-e019-472c-839a-2d8df5bc0d0b
-        title: About
+        title: 'About Page'
         url: about
   -
     id: 7b9ddfe9-b876-4219-b520-bc4577d14238
@@ -16,7 +16,3 @@ tree:
     id: e4630760-e5c0-4b55-b19e-83ca01992362
     title: Contact
     url: /contact
-  -
-    id: d5c63fdc-8549-4560-b8f8-56204ac4cb81
-    title: 'Private Page'
-    url: /private-page

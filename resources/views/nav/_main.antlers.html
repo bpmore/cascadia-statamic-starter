@@ -23,11 +23,11 @@
                             x-popover:panel
                             x-cloak
                             x-transition.origin.top.left
-                            class="absolute left-0 mt-2 w-40 z-10 bg-white px-4 py-2 rounded-sm"
+                            class="absolute left-0 mt-2 w-40 z-10 bg-white text-slate-800 px-4 py-2 rounded-sm"
                         >
                             <ul>
                                 {{ children }}
-                                    <li class="py-1"><a href="{{ url }}">{{ title }}</a></li>
+                                    <li class="py-1"><a href="/{{ url }}">{{ title }}</a></li>
                                 {{ /children }}
                             </ul>
                         </div>

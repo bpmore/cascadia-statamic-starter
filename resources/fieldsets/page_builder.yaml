@@ -17,56 +17,48 @@ fields:
           sets:
             blog_teaser:
               display: 'Blog Teaser'
-              instructions: null
               icon: content-book-open
               fields:
                 -
                   import: blog_teasers
             google_map:
               display: 'Google Map'
-              instructions: null
               icon: travel-map
               fields:
                 -
                   handle: title
                   field:
-                    input_type: text
-                    antlers: false
                     type: text
                     display: Title
-                    listable: hidden
-                    instructions_position: above
-                    visibility: visible
-                    replicator_preview: true
-                    hide_display: false
                 -
                   import: google_map_locations
             tabs_explorer:
               display: 'Tabs Explorer'
-              instructions: null
               icon: layout-header-sidebar-left
               fields:
                 -
                   import: side_tabs_explorer
             image_carousel:
               display: 'Image Carousel'
-              instructions: null
               icon: media-image-picture-gallery
               fields:
                 -
                   handle: heading
                   field:
-                    input_type: text
-                    antlers: false
                     type: text
                     display: Heading
-                    listable: hidden
-                    instructions_position: above
-                    visibility: visible
-                    replicator_preview: true
-                    hide_display: false
                 -
                   import: image_carousel
+            contact_form:
+              display: 'Contact Form'
+              icon: form-text-field
+              fields:
+                -
+                  handle: contact_form
+                  field:
+                    max_items: 1
+                    type: form
+                    display: 'Contact Form'
         text:
           display: Text
           instructions: 'Text based blocks.'
@@ -74,164 +66,90 @@ fields:
           sets:
             hero:
               display: Hero
-              instructions: null
               icon: align-object-top
               fields:
                 -
                   handle: main_heading
                   field:
-                    input_type: text
-                    antlers: false
                     type: text
                     display: 'Main Heading'
-                    listable: hidden
-                    instructions_position: above
-                    visibility: visible
-                    replicator_preview: true
-                    hide_display: false
                 -
                   handle: sub_heading
                   field:
-                    input_type: text
-                    antlers: false
                     type: text
                     display: 'Sub Heading'
-                    listable: hidden
-                    instructions_position: above
-                    visibility: visible
-                    replicator_preview: true
-                    hide_display: false
                 -
                   handle: background_option
                   field:
                     options:
                       image: Image
                       video: Video
-                    inline: false
-                    cast_booleans: false
                     default: image
                     type: radio
                     display: 'Background Media'
-                    listable: hidden
-                    instructions_position: above
-                    visibility: visible
-                    replicator_preview: true
-                    hide_display: false
                 -
                   handle: background_video
                   field:
                     type: video
                     display: 'Background Video'
-                    listable: hidden
-                    instructions_position: above
-                    visibility: visible
-                    replicator_preview: true
-                    hide_display: false
                     if:
                       background_option: 'equals video'
                 -
                   handle: background_image
                   field:
-                    mode: list
                     container: assets
-                    restrict: false
-                    allow_uploads: true
-                    show_filename: true
-                    show_set_alt: true
                     type: assets
                     display: 'Background Image'
-                    listable: hidden
-                    instructions_position: above
-                    visibility: visible
-                    replicator_preview: true
-                    hide_display: false
                     if:
                       background_option: 'equals image'
                 -
                   handle: cta_link
                   field:
                     max_items: 1
-                    mode: default
-                    create: true
                     collections:
                       - pages
                     type: entries
                     display: 'CTA Link'
                     width: 50
-                    listable: hidden
-                    instructions_position: above
-                    visibility: visible
-                    replicator_preview: true
-                    hide_display: false
                 -
                   handle: cta_text
                   field:
-                    input_type: text
                     placeholder: 'Learn more'
-                    antlers: false
                     type: text
                     display: 'CTA Text'
                     width: 50
-                    listable: hidden
-                    instructions_position: above
-                    visibility: visible
-                    replicator_preview: true
-                    hide_display: false
                 -
                   handle: show_modal
                   field:
-                    default: false
                     type: toggle
                     display: 'Show Modal Items?'
-                    listable: hidden
-                    instructions_position: above
-                    visibility: visible
-                    replicator_preview: true
-                    hide_display: false
                 -
                   import: modal_popup
             intro:
               display: Intro
-              instructions: null
               icon: text-formatting-image-top
               fields:
                 -
                   import: intro_section
             accordion:
               display: Accordion
-              instructions: null
-              icon: null
               fields:
                 -
                   handle: heading
                   field:
-                    input_type: text
-                    antlers: false
                     type: text
                     display: Heading
-                    listable: hidden
-                    instructions_position: above
-                    visibility: visible
-                    replicator_preview: true
-                    hide_display: false
                 -
                   import: accordion
             fifty_split:
               display: '50/50 Split'
-              instructions: null
               icon: layout-split-verical
               fields:
                 -
                   import: fifty_split
             cta_bumper:
               display: 'CTA Bumper'
-              instructions: null
               icon: text-formatting-image-top
               fields:
                 -
                   import: cta_bumper
-      instructions_position: above
-      visibility: visible
-      previews: true
-      replicator_preview: true
-      fullscreen: true

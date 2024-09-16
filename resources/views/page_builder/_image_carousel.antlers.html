@@ -10,14 +10,19 @@
 
         <div class="container">
             <h2 class="text-2xl lg:text-3xl mb-8 font-semibold">{{ heading }}</h2>
-            <div class="carousel w-full" x-ref="carousel">
-                {{ images }}
-                    <div class="carousel-slide relative aspect-video w-full">
-                        {{ glide :src="url" width="1200" height="800" }}
-                            <img src="{{ url }}" alt="{{ alt }}" class="object-cover object-center w-full h-full">
-                        {{ /glide }}
-                    </div>
-                {{ /images }}
+            <div class="splide w-full" x-ref="carousel">
+                <div class="splide__track">
+                    <ul class="splide__list">
+
+                        {{ images }}
+                            <li class="splide__slide relative aspect-video w-full">
+                                {{ glide :src="url" width="1200" height="800" }}
+                                    <img src="{{ url }}" alt="{{ alt }}" class="object-cover object-center w-full h-full">
+                                {{ /glide }}
+                            </li>
+                        {{ /images }}
+                    </ul>
+                </div>
             </div>
 
             {{ if show_index }}
@@ -27,12 +32,12 @@
             {{ /if }}
 
             <div class="flex justify-center gap-8 text-center mx-auto mt-8">
-                <button @click="prevSlide">
+                <button @click="prevSlide" x-bind:disabled="isPrevDisabled" class="disabled:opacity-50">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
                     </svg>
                 </button>
-                <button @click="nextSlide">
+                <button @click="nextSlide" x-bind:disabled="isNextDisabled" class="disabled:opacity-50">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                     </svg>

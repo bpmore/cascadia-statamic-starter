@@ -1,0 +1,53 @@
+{{#
+    @name Form
+    @desc The form page builder block.
+    @set page.page_builder.form
+#}}
+
+<!-- /page_builder/_form.antlers.html -->
+{{ partial:page_builder/block }}
+<div class="contact-form-container py-12 lg:py-16 bg-white">
+    <div class="container">
+        <h2>Get in touch</h2>
+
+        {{# Render form and use Alpine based Statamic conditional logic. #}}
+        {{ if contact_form }}
+            {{ form:contact attr:x-ref="form" js="alpine" }}
+                <div x-data='{
+                    form: $form(
+                        "post",
+                        $refs.form.getAttribute("action"),
+                        JSON.parse($refs.form.getAttribute("x-data"))
+                    ).setErrors({{ error | json }}),
+                }'>
+
+                    {{ if success }}
+                        Success!
+                    {{ /if }}
+
+                    <template x-if="form.hasErrors">
+                        <div>
+                            Errors!
+                            <ul>
+                                <template x-for="error in form.errors">
+                                    <li x-text="error"></li>
+                                </template>
+                            </ul>
+                        </div>
+                    </template>
+
+                    {{ fields }}
+                        <label>{{ display }}</label>
+                        {{ field }}
+                        <small x-show="form.invalid('{{ handle }}')" x-text="form.errors.{{ handle }}"></small>
+                    {{ /fields }}
+
+                    <button :disabled="form.processing">Submit</button>
+
+                </div>
+            {{ /form:contact }}
+        {{ /if }}
+    </div>
+</div>
+{{ /partial:page_builder/block }}
+<!-- End: /page_builder/_form.antlers.html -->

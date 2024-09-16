@@ -4,7 +4,11 @@
 
     <ul class="inline-flex gap-2 mt-4">
         {{ taxonomy:categories }}
-            <li><a href="{{ url }}"  class="rounded bg-blue-200 px-2 py-1 text-xs hover:bg-blue-300 transition">{{ title }}</a></li>
+            <li>
+                <a href="{{ url }}" class="rounded bg-blue-200 px-2 py-1 text-xs hover:bg-blue-300 transition">
+                    {{ title }}
+                </a>
+            </li>
         {{ /taxonomy:categories }}
     </ul>
 
@@ -33,5 +37,5 @@
                 </div>
             {{ /if }}
         {{ /paginate }}
-    {{ /collection }}
+    {{ /collection:blog }}
 </div>
