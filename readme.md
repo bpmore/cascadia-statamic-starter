@@ -2,6 +2,8 @@
 
 Cascadia is a mostly-unopinionated starter kit, with just enough CSS and JS to get you going with the essentials.
 
+![Cascadia Starter Logo](cascadia-kit.jpg)
+
 ## Components
 Cascadia comes with a bunch of Page Builder components with some sensible presets that you can customize to your liking. These include:
 - Accordion
