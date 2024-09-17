@@ -1,8 +1,8 @@
 <title>{{ meta_title ?? title }} | {{ site:name }}</title>
-<meta name="og:title" content="{{ meta_title ?? title }} | {{ site:name }}" />
+<meta property="og:title" content="{{ meta_title ?? title }} | {{ site:name }}" />
 {{ if meta_description }}
-    <meta name="og:description" content="{{ meta_description }}" />
+    <meta property="og:description" content="{{ meta_description }}" />
 {{ /if }}
 {{ if og_image }}
-    <meta name="og:image" content="{{ og_image:url }}" />
+    <meta property="og:image" content="{{ og_image:url }}" />
 {{ /if }}
