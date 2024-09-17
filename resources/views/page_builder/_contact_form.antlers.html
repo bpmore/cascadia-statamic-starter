@@ -8,7 +8,7 @@
 {{ partial:page_builder/block }}
 <div class="contact-form-container py-12 lg:py-16 bg-white">
     <div class="container">
-        <h2>Get in touch</h2>
+        <h2 class="mb-4 font-bold text-xl lg:text-2xl">Get in touch</h2>
 
         {{# Render form and use Alpine based Statamic conditional logic. #}}
         {{ if contact_form }}
@@ -36,13 +36,18 @@
                         </div>
                     </template>
 
-                    {{ fields }}
-                        <label>{{ display }}</label>
-                        {{ field }}
-                        <small x-show="form.invalid('{{ handle }}')" x-text="form.errors.{{ handle }}"></small>
-                    {{ /fields }}
+                    <div class="forms space-y-4">
+                        {{ fields }}
+                            <div class="size-fit p-4 rounded shadow-inner">
+                                <label>{{ display }}</label>
+                                {{ field }}
+                                <small x-show="form.invalid('{{ handle }}')" x-text="form.errors.{{ handle }}"></small>
+                            </div>
+                        {{ /fields }}
 
-                    <button :disabled="form.processing">Submit</button>
+                        <button :disabled="form.processing" class="text-slate-900 bg-white px-4 py-2 rounded shadow inline-block mt-8">Submit</button>
+                    </div>
+
 
                 </div>
             {{ /form:contact }}

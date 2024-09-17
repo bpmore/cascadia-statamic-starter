@@ -82,6 +82,10 @@ export default () => ({
                 }, 0);
 			}, false);
 		}
+
+        setTimeout( () => {
+            this.filterMarkers()
+        }, 0 )
 	},
 
     setMapSize(bounds, map){
@@ -187,5 +191,10 @@ export default () => ({
 			// }
 		})
 	},
+
+    setLocationFilter( value ) {
+        this.locationFilter = value;
+        this.filterMarkers()
+    }
 
 });
