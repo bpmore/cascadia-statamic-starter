@@ -11,4 +11,5 @@ export_paths:
   - package.json
   - tailwind.config.js
   - vite.config.js
+  - cascadia-kit.jpg
   - readme.md
