@@ -1,8 +1,8 @@
 {
-    "name": "mlaroy/tailwind-alpine-starter",
+    "name": "mlaroy/cascadia-statamic-starter",
     "extra": {
         "statamic": {
-            "name": "Tailwind Alpine Starter Kit",
+            "name": "Cascadia Starter Kit",
             "description": "Unopinionated Starter Kit with Tailwind and Alpine JS"
         }
     }
