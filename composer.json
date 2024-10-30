@@ -1,7 +1,9 @@
 "repositories": [
 	{
+		"cascadia-starter-kit": {
 		"type": "vcs",
 		"url":  "git@github.com:bpmore/cascadia-starter-kit.git"
+	}
 	}
 ]
 {
