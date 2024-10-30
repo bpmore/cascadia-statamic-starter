@@ -1,5 +1,11 @@
+"repositories": [
+	{
+		"type": "vcs",
+		"url":  "git@github.com:bpmore/cascadia-starter-kit.git"
+	}
+]
 {
-    "name": "mlaroy/cascadia-statamic-starter",
+    "name": "bpmore/cascadia-statamic-starter",
     "extra": {
         "statamic": {
             "name": "Cascadia Starter Kit",
