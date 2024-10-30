@@ -1,10 +1,11 @@
 {
     "url":  "git@github.com:bpmore/cascadia-starter-kit.git",
-    "name": "cascadia-statamic-starter",
+    "name": "cascadia-statamic-starter": "1.0@dev",
     "extra": {
         "statamic": {
             "name": "Cascadia Starter Kit",
             "description": "Unopinionated Starter Kit with Tailwind and Alpine JS"
+            "minimum-stability": "dev"
         }
     }
 }
