@@ -1,6 +1,9 @@
 {
+    {
     "url":  "git@github.com:bpmore/cascadia-starter-kit.git",
     "name": "bpmore/cascadia-statamic-starter": "1.0@dev",
+}
+{
     "extra": {
         "statamic": {
             "name": "Cascadia Starter Kit",
