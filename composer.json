@@ -1,10 +1,9 @@
 {
-    "name": "my-vendor-name/starter-kit-tailwind-alpine",
-    "name": "mlaroy/tailwind-alpine-starter",
+    "name": "bpmore/cascadia-statamic-starter",
     "extra": {
         "statamic": {
-            "name": "Starter Kit Tailwind Alpine",
-            "description": "Starter Kit Tailwind Alpine starter kit"
+            "name": "Cascadia Starter Kit",
+            "description": "Cascadia Starter Kit Tailwind Alpine starter kit"
         }
     }
 }
